@@ -9,6 +9,13 @@
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --radius: 18px;
 }
+html {
+  scroll-padding-top: 86px; /* offset for sticky header height */
+  scroll-behavior: smooth;  /* optional but nice */
+}
+section {
+  scroll-margin-top: 86px;
+}
 
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; background:var(--bg); color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
