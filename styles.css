@@ -10,11 +10,11 @@
   --radius: 18px;
 }
 html {
-  scroll-padding-top: 86px; /* offset for sticky header height */
+  scroll-padding-top: 96px; /* offset for sticky header height */
   scroll-behavior: smooth;  /* optional but nice */
 }
 section {
-  scroll-margin-top: 86px;
+  scroll-margin-top: 96px;
 }
 
 *{ box-sizing:border-box; }
