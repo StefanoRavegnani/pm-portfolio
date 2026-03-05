@@ -347,3 +347,24 @@ a{ color:inherit; text-decoration:none; }
 @media (max-width: 520px){
   .brand__tag{ display:none; }
 }
+#backToTop{
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+  box-shadow: var(--shadow);
+}
+
+#backToTop:hover{
+  border-color: var(--accent);
+}
