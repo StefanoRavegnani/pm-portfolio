@@ -77,6 +77,23 @@ a{ color:inherit; text-decoration:none; }
   margin-bottom: 14px;
 }
 
+.hero-header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+.hero-name h1{
+  margin:0;
+}
+
+.hero-subtitle{
+  margin:4px 0 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .hero-photo{
   width: 90px;
   height: 90px;
