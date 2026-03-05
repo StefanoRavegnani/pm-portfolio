@@ -267,3 +267,26 @@ a{ color:inherit; text-decoration:none; }
   .hamburger{ display:inline-block; }
   .grid-2{ grid-template-columns: 1fr; }
 }
+.hero__inner{
+  display:grid;
+  grid-template-columns: 1fr 360px;
+  gap:40px;
+  align-items:start;
+}
+
+.hero__copy{
+  grid-column:1;
+}
+
+.hero__card{
+  grid-column:2;
+}
+@media (max-width:900px){
+  .hero__inner{
+    grid-template-columns:1fr;
+  }
+
+  .hero__card{
+    grid-column:1;
+  }
+}
