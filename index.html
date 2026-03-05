@@ -552,5 +552,24 @@
   </main>
 
   <script src="script.js"></script>
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+const btn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    btn.style.opacity = "1";
+    btn.style.pointerEvents = "auto";
+  } else {
+    btn.style.opacity = "0";
+    btn.style.pointerEvents = "none";
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
 </body>
 </html>
