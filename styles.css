@@ -77,10 +77,19 @@ a{ color:inherit; text-decoration:none; }
 }
 .hero__inner{
   display:grid;
-  grid-template-columns: 1.5fr .9fr;
-  gap:26px;
+  grid-template-columns: 1fr 380px;
+  gap:40px;
   align-items:start;
 }
+.quick-snapshot{
+  grid-column:2;
+  position:relative;
+  top:0;
+}
+.hero__copy{
+  grid-column:1;
+}
+
 .hero h1{ margin:0 0 10px; font-size:42px; letter-spacing:-.6px; }
 .hero__lead{ margin:0 0 16px; color:var(--muted); font-size:16px; line-height:1.5; }
 
